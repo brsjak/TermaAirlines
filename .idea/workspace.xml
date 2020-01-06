@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cc87b6f8-fbbf-46c3-809b-9c4db016b7f3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php_installation_&lt;7.1&gt;" />
+  <component name="ProjectId" id="1VAH8oN7j3G67mI0G3rvn5O2hkD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="F:/xampp/php/php.exe" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Finki\Bazi\Labs2019\Proekt" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="register.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Proekt/register.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.register.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc87b6f8-fbbf-46c3-809b-9c4db016b7f3" name="Default Changelist" comment="" />
+      <created>1576688827699</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576688827699</updated>
+      <workItem from="1576688840522" duration="738000" />
+      <workItem from="1576689762912" duration="1064000" />
+      <workItem from="1576762227339" duration="1961000" />
+      <workItem from="1576764364142" duration="1379000" />
+      <workItem from="1576796901903" duration="682000" />
+      <workItem from="1577188330866" duration="37000" />
+      <workItem from="1577188442270" duration="1175000" />
+      <workItem from="1577189753017" duration="2298000" />
+      <workItem from="1577195531042" duration="4756000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="540" y="174" key="#CLI_Interpreters" timestamp="1577191331579">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="174" key="#CLI_Interpreters/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577191331579" />
+    <state x="667" y="110" key="#PHP" timestamp="1577188733928">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="110" key="#PHP/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577188733928" />
+    <state x="552" y="179" key="#Web_Browsers" timestamp="1577196702792">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#Web_Browsers/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577196702792" />
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577196708344">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577196708344" />
+    <state x="640" y="247" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576689640578">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="247" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1576689640578" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1577191453068">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577191453068" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1577212046563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577212046563" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1577212046563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.center/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577212046563" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1577212046562">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.left/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577212046562" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1577212046563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577212046563" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1577212046563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577212046563" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1577212046563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577212046563" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1577212046563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577212046563" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1577212046563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577212046563" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1577212046564">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577212046564" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1577212046563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.center/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577212046563" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1577212046563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.left/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577212046563" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1577212046564">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.2.right/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577212046564" />
+    <state x="462" y="17" key="SettingsEditor" timestamp="1577191670240">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="462" y="17" key="SettingsEditor/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1577191670240" />
+    <state x="329" y="12" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1576695633404" />
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1576688844013">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog/-1366.162.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1576688844013" />
+  </component>
+</project>
