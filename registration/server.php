@@ -1,5 +1,7 @@
 <?php
-    session_start();
+    if(!isset($_SESSION)){
+        session_start();
+    }
 
     //initializing variables
     $fName = "";
@@ -19,11 +21,61 @@
 
     //db connection
     $db = mysqli_connect($dbhost,$dbusername,$dbpassword,$dbName);
+    $_SESSION['db']=$db;
     
 
     if(!$db){
         die("Failed to connect!" . $db->connect_error());
     }
+
+
+    //FUNCTIONS
+
+    function findUserFlights(){
+
+        //finding user embg
+        $userEmail=$_SESSION['email'];
+        $db = $_SESSION['db'];
+        $embgQ = "SELECT embg FROM person WHERE email='$userEmail'";
+        $embgQExe = mysqli_query($db,$embgQ);
+        $result = mysqli_fetch_array($embgQExe);
+        $userEmbg = $result['embg'];
+
+        //finding booking
+        
+        $bookingQ = "SELECT * FROM booking WHERE embg='$userEmbg'";
+        $bookingQExe = mysqli_query($db,$bookingQ);
+        $bookingR = mysqli_fetch_array($bookingQExe);
+        
+        $userFID = $bookingR['f_id'];
+
+        //finding user seat
+
+        $seatQ = "SELECT * FROM booking where f_id='$userFID'";
+
+        $seatQExe = mysqli_query($db,$seatQ);
+
+        $seatQRes = mysqli_fetch_array($seatQExe);
+        $userSeat = $seatQRes['seat'];
+        $userTerminal = $seatQRes['terminal'];
+        $userGate = $seatQRes['gate'];
+        $_SESSION['seat']=$userSeat;
+        $_SESSION['terminal']=$userTerminal;
+        $_SESSION['gate']=$userGate;
+
+        //finding user flights
+
+        $userFlightQ = "SELECT * FROM flights WHERE f_id='$userFID'";
+        $uFQExe = mysqli_query($db,$userFlightQ);
+        $resultF=mysqli_fetch_array($uFQExe);
+
+        return $resultF;
+    }
+
+
+
+
+    //=================================================
 
 
     //User Registration
@@ -142,4 +194,6 @@
             }
         }
     }
+
+    
 ?>

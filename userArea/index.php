@@ -60,16 +60,6 @@
                                     19</b> </a></li>
                             </ul>
                             <!--/.widget-nav-->
-                            
-                            
-                            <ul class="widget widget-menu unstyled">
-                                <li><a href="ui-button-icon.html"><i class="menu-icon icon-bold"></i> Buttons </a></li>
-                                <li><a href="ui-typography.html"><i class="menu-icon icon-book"></i>Typography </a></li>
-                                <li><a href="form.html"><i class="menu-icon icon-paste"></i>Forms </a></li>
-                                <li><a href="table.html"><i class="menu-icon icon-table"></i>Tables </a></li>
-                                <li><a href="charts.html"><i class="menu-icon icon-bar-chart"></i>Charts </a></li>
-                            </ul>
-                            <!--/.widget-nav-->
                             <ul class="widget widget-menu unstyled">
                                 <li><a class="collapsed" data-toggle="collapse" href="#togglePages"><i class="menu-icon icon-cog">
                                 </i><i class="icon-chevron-down pull-right"></i><i class="icon-chevron-up pull-right">
@@ -85,79 +75,129 @@
                         </div>
                         <!--/.sidebar-->
                     </div>
-                    <!--/.span3-->
                     <div class="span9">
                         <div class="content">
                             <div class="btn-controls">
+                                <!-- PHP function -->
+
+                                <?php 
+                                    include('./../registration/server.php'); 
+                                    
+                                    $result = findUserFlights();
+
+                                    $d_date = $result['d_date'];
+                                    $d_time = $result['d_time'];
+                                    $f_carrier = $result['f_carrier'];
+                                    $userSeat=$_SESSION['seat'];
+                                    $userTerminal=$_SESSION['terminal'];
+                                    $userGate=$_SESSION['gate'];
+
+                                ?>
+                                <!-- END PHP FUNCTION-->
                                 <div class="module-head"><h3>Your next flight</h3></div>
                                 <div class="btn-box-row row-fluid">
-                                    <a href="#" class="btn-box big span4"><i class="fas fa-route"></i><b>15.02.2020 / 20:00</b>
+                                    <a href="#" class="btn-box big span4"><i class="fas fa-route"></i><b><?php echo "$d_date / $d_time" ?></b>
                                         <p class="text-muted">
                                            Date/Boarding Time</p>
-                                    </a><a href="#" class="btn-box big span4"><i class="icon-plane"></i><b>Lufthansa</b>
+                                    </a><a href="#" class="btn-box big span4"><i class="icon-plane"></i><b><?php echo $f_carrier ?></b>
                                         <p class="text-muted">
                                             Carrier</p>
-                                    </a><a href="#" class="btn-box big span4"><i class="icon-suitcase"></i><b>4/96/36C</b>
+                                    </a><a href="#" class="btn-box big span4"><i class="icon-suitcase"></i><b><?php echo "$userTerminal/$userGate/$userSeat" ?></b>
                                         <p class="text-muted">
                                             Terminal/Gate/Seat</p>
                                     </a>
                                 </div>
-                                <div class="module-head"><h3>Packing</h3></div>
                                 <div class="btn-box-row row-fluid">
-                                <div class="module-body table">								
-                                    <table class="table table-message">
-                                        <tbody>
-                                            <tr class="heading">
-                                                <td class="cell-icon"></td>
-                                                <td class="cell-title">Task</td>
-                                                <td class="cell-status hidden-phone hidden-tablet">Status</td>
-                                                <td class="cell-time align-right">Due Date</td>
-                                            </tr>
-                                            <tr class="task">
-                                                <td class="cell-icon"><i class="icon-checker high"></i></td>
-                                                <td class="cell-title"><div>Lorem ipsum dolor sit et, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></td>
-                                                <td class="cell-status hidden-phone hidden-tablet"><b class="due">Missed</b></td>
-                                                <td class="cell-time align-right">Just Now</td>
-                                            </tr>
-                                            <tr class="task">
-                                                <td class="cell-icon"><i class="icon-checker"></i></td>
-                                                <td class="cell-title"><div>Lorem ipsum dolor sit et, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></td>
-                                                <td class="cell-status hidden-phone hidden-tablet"><b class="due">Missed</b></td>
-                                                <td class="cell-time align-right">Just Now</td>
-                                            </tr>
-                                            <tr class="task">
-                                                <td class="cell-icon"><i class="icon-checker"></i></td>
-                                                <td class="cell-title"><div>Lorem ipsum dolor sit et, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></td>
-                                                <td class="cell-status hidden-phone hidden-tablet"><b class="due">Missed</b></td>
-                                                <td class="cell-time align-right">Yesterday</td>
-                                            </tr>
-                                            <tr class="task resolved">
-                                                <td class="cell-icon"><i class="icon-checker high"></i></td>
-                                                <td class="cell-title"><div>Lorem ipsum dolor sit et, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></td>
-                                                <td class="cell-status hidden-phone hidden-tablet"></td>
-                                                <td class="cell-time align-right">15 July 2014</td>
-                                            </tr>
-                                            <tr class="task resolved">
-                                                <td class="cell-icon"><i class="icon-checker high"></i></td>
-                                                <td class="cell-title"><div>Lorem ipsum dolor sit et, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></td>
-                                                <td class="cell-status hidden-phone hidden-tablet"></td>
-                                                <td class="cell-time align-right">15 July 2014</td>
-                                            </tr>
-                                            <tr class="task resolved">
-                                                <td class="cell-icon"><i class="icon-checker high"></i></td>
-                                                <td class="cell-title"><div>Lorem ipsum dolor sit et, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></td>
-                                                <td class="cell-status hidden-phone hidden-tablet"></td>
-                                                <td class="cell-time align-right">15 July 2014</td>
-                                            </tr>
-                                            <tr class="task resolved">
-                                                <td class="cell-icon"><i class="icon-checker high"></i></td>
-                                                <td class="cell-title"><div>Lorem ipsum dolor sit et, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></td>
-                                                <td class="cell-status hidden-phone hidden-tablet"></td>
-                                                <td class="cell-time align-right">15 July 2014</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    </div>
+                                    <div class="module-body table">								
+                                    <div class="">
+                                            <div class="content">
+                                                <div class="module message">
+                                                    <div class="module-head"><h3>Packing</h3></div>
+                                                    <div class="module-option clearfix">
+                                                        <div class="pull-left">
+                                                            Filter : &nbsp;
+                                                            <div class="btn-group">
+                                                                <button class="btn">All</button>
+                                                                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                                                                    <span class="caret"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="#">All</a></li>
+                                                                    <li><a href="#">To be done</a></li>
+                                                                    <li><a href="#">Done</a></li>
+                                                                    <li class="divider"></li>
+                                                                    <li><a href="#">To buy</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pull-right">
+                                                            <a href="#" class="btn btn-primary">New Item</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="module-body table">								
+                                                        <table class="table table-message">
+                                                            <tbody>
+                                                                <tr class="heading">
+                                                                    <td class="cell-icon"></td>
+                                                                    <td class="cell-title">Items</td>
+                                                                    <td class="cell-status hidden-phone hidden-tablet">Status</td>
+                                                                    <td class="cell-time align-right">Due Date</td>
+                                                                </tr>
+                                                                <tr class="task">
+                                                                    <td class="cell-icon"><i class="icon-checker high"></i></td>
+                                                                    <td class="cell-title"><div>Lorem ipsum dolor sit et, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></td>
+                                                                    <td class="cell-status hidden-phone hidden-tablet"><b class="due">Missed</b></td>
+                                                                    <td class="cell-time align-right">Just Now</td>
+                                                                </tr>
+                                                                <tr class="task">
+                                                                    <td class="cell-icon"><i class="icon-checker"></i></td>
+                                                                    <td class="cell-title"><div>Lorem ipsum dolor sit et, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></td>
+                                                                    <td class="cell-status hidden-phone hidden-tablet"><b class="due">Missed</b></td>
+                                                                    <td class="cell-time align-right">Just Now</td>
+                                                                </tr>
+                                                                <tr class="task">
+                                                                    <td class="cell-icon"><i class="icon-checker"></i></td>
+                                                                    <td class="cell-title"><div>Lorem ipsum dolor sit et, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></td>
+                                                                    <td class="cell-status hidden-phone hidden-tablet"><b class="due">Missed</b></td>
+                                                                    <td class="cell-time align-right">Yesterday</td>
+                                                                </tr>
+                                                                <tr class="task resolved">
+                                                                    <td class="cell-icon"><i class="icon-checker high"></i></td>
+                                                                    <td class="cell-title"><div>Lorem ipsum dolor sit et, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></td>
+                                                                    <td class="cell-status hidden-phone hidden-tablet"></td>
+                                                                    <td class="cell-time align-right">5 Jan 2020</td>
+                                                                </tr>
+                                                                <tr class="task resolved">
+                                                                    <td class="cell-icon"><i class="icon-checker high"></i></td>
+                                                                    <td class="cell-title"><div>Lorem ipsum dolor sit et, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></td>
+                                                                    <td class="cell-status hidden-phone hidden-tablet"></td>
+                                                                    <td class="cell-time align-right">5 Jan 2020</td>
+                                                                </tr>
+                                                                <tr class="task resolved">
+                                                                    <td class="cell-icon"><i class="icon-checker high"></i></td>
+                                                                    <td class="cell-title"><div>Lorem ipsum dolor sit et, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></td>
+                                                                    <td class="cell-status hidden-phone hidden-tablet"></td>
+                                                                    <td class="cell-time align-right">29 Dec 2019</td>
+                                                                </tr>
+                                                                <tr class="task resolved">
+                                                                    <td class="cell-icon"><i class="icon-checker high"></i></td>
+                                                                    <td class="cell-title"><div>Lorem ipsum dolor sit et, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></td>
+                                                                    <td class="cell-status hidden-phone hidden-tablet"></td>
+                                                                    <td class="cell-time align-right">29 Dec 2019</td>
+                                                                </tr>
+                                                                <tr class="task resolved">
+                                                                    <td class="cell-icon"><i class="icon-checker high"></i></td>
+                                                                    <td class="cell-title"><div>Lorem ipsum dolor sit et, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></td>
+                                                                    <td class="cell-status hidden-phone hidden-tablet"></td>
+                                                                    <td class="cell-time align-right">29 Dec 2019</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                <div class="module-foot"></div>
+                                            </div>
+                                        </div><!--/.content-->
+                                    </div><!--/.span9-->
                                 </div>
                             </div>
                         </div>
@@ -169,7 +209,7 @@
         <!--/.wrapper-->
         <div class="footer">
             <div class="container">
-                <b class="copyright">&copy; 2014 Edmin - EGrappler.com </b>All rights reserved.
+                <b class="copyright">&copy; 2020 TermaAirlines | Powered by Brsjak </b>All rights reserved.
             </div>
         </div>
 
