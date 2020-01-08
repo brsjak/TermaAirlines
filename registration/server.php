@@ -99,8 +99,8 @@
 
             if(mysqli_query($db,$final_query)){
                 $_SESSION['email']=$email;
-                $_SESSION['success']="You have successfully signed up and now you are logged in!";
-                header('location: index.php');
+                $_SESSION['success']="You have successfully signed up!";
+                header('location: login.php');
             }else{
                 echo "ERROR!";
             }
@@ -129,8 +129,14 @@
 
             if(mysqli_num_rows($results) == 1){
                 $_SESSION['email']=$email;
-                $_SESSION['success']="You are now logged in!";
-                header('location: ./../userArea/index.html');
+                $firstNameQuery = "SELECT f_name FROM person WHERE email='$email'";
+
+                $fNameExecute = mysqli_query($db,$firstNameQuery);
+                $result = mysqli_fetch_array($fNameExecute);
+                $user_name = $result['f_name'];
+                
+                $_SESSION['firstName']=$user_name;
+                header('location: ./../userArea/index.php');
             } else{
                 array_push($errors, "Wrong username/password combination!");
             }
